@@ -2,7 +2,7 @@
 
 # 女性ポートレート・プロンプトディレクター Skill
 
-女性ポートレート・プロンプトディレクター Skill は、AI 画像生成向けの構造化プロンプト生成・視覚拡張システムです。V1.1 では、ユーザーのパラメータを固定し、視覚意図を理解し、各撮影モジュールを具体化してから、安定した再利用可能なプロンプトへ統合します。
+女性ポートレート・プロンプトディレクター Skill は、AI 画像生成向けの構造化プロンプト生成・視覚ディレクションシステムです。V1.2 では、明示されたパラメータを固定し、選択されたスタイルルートだけを読み込み、自然な瞬間、動作、視線、環境、カメラ、光を一つの画面意図へ統合します。
 
 このプロジェクトは単なるプロンプト集ではなく、拡張可能な女性ポートレート用 Skill フレームワークです。
 
@@ -64,7 +64,11 @@
 │   ├── skill.md
 │   ├── public_instructions.md
 │   ├── parameter_schema.md
-│   └── usage_examples.md
+│   ├── usage_examples.md
+│   ├── references/
+│   │   ├── director-expansion.md
+│   │   └── visual-libraries.md
+│   └── routes/
 ├── docs/
 │   ├── style_guide.md
 │   ├── prompt_safety.md
@@ -84,5 +88,5 @@
 ## 作者とバージョン
 
 - 作者：Li Yue（李岳）
-- バージョン：`FEMALE-PORTRAIT-DIRECTOR-V1.1`
+- バージョン：`FEMALE-PORTRAIT-DIRECTOR-V1.2`
 - プロジェクト：`Female Portrait Prompt Director Skill`

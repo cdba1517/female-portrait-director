@@ -2,7 +2,7 @@
 
 # 여성 인물 프롬프트 디렉터 Skill
 
-여성 인물 프롬프트 디렉터 Skill은 AI 이미지 생성을 위한 구조화된 프롬프트 생성 및 시각 확장 시스템입니다. V1.1은 사용자 파라미터를 고정하고 시각적 의도를 이해한 뒤 각 촬영 모듈을 구체적으로 확장하여 안정적이고 재사용 가능한 프롬프트로 통합합니다.
+여성 인물 프롬프트 디렉터 Skill은 AI 이미지 생성을 위한 구조화된 프롬프트 생성 및 시각 디렉션 시스템입니다. V1.2는 명시된 파라미터를 고정하고 선택된 스타일 라우트만 읽은 뒤 자연스러운 순간, 동작, 시선, 환경, 카메라와 조명을 하나의 화면 의도로 통합합니다.
 
 이 프로젝트는 단순한 프롬프트 모음이 아니라 확장 가능한 여성 인물 프롬프트 Skill 프레임워크입니다.
 
@@ -64,7 +64,11 @@
 │   ├── skill.md
 │   ├── public_instructions.md
 │   ├── parameter_schema.md
-│   └── usage_examples.md
+│   ├── usage_examples.md
+│   ├── references/
+│   │   ├── director-expansion.md
+│   │   └── visual-libraries.md
+│   └── routes/
 ├── docs/
 │   ├── style_guide.md
 │   ├── prompt_safety.md
@@ -84,5 +88,5 @@
 ## 작성자 및 버전
 
 - 작성자: Li Yue (李岳)
-- 버전: `FEMALE-PORTRAIT-DIRECTOR-V1.1`
+- 버전: `FEMALE-PORTRAIT-DIRECTOR-V1.2`
 - 프로젝트: `Female Portrait Prompt Director Skill`

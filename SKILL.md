@@ -1,29 +1,40 @@
 ---
 name: female-portrait-director
-description: Generate, visually expand, optimize, and route structured AI image prompts for fictional adult female portraits. Use when users request female portrait prompts, lifestyle portraits, restrained curve-focused fashion portraits, urban fashion photography, gufeng fantasy portraits, e-commerce clothing model images, prompt expansion, or stable copy-ready image prompts. Preserve user-selected parameters, expand each visual module like a photography director, and enforce adult, non-explicit, non-exploitative safety boundaries.
+description: Generate, visually expand, optimize, and route structured AI image prompts for fictional adult female portraits. Use for lifestyle portraits, restrained curve-focused fashion portraits, urban fashion photography, gufeng fantasy portraits, e-commerce clothing model images, prompt expansion, or direct image-generation prompt preparation. Preserve explicit user parameters while turning them into a coherent photography-directed visual scene.
 ---
 
 # Female Portrait Director
 
-Use this skill to turn a small set of user parameters into visually expanded, stable, directly reusable AI image prompts for fictional adult female portraits.
+Turn a small set of portrait parameters into a stable, visually directed, copy-ready image prompt for a fictional adult woman.
 
-## Workflow
+## Required loading order
 
-1. Read [skill/skill.md](skill/skill.md) before generating or rewriting a portrait prompt. Treat it as the canonical rule source.
-2. Lock every explicit user parameter. Expand or stabilize it without silently replacing the user's direction.
-3. Select exactly one primary style route. Resolve conflicts through supplementary wording instead of changing explicit parameters.
-4. Parse face, body, outfit, scene, camera and pose, lighting, and filter modules.
-5. Expand each module into concrete visual direction. Do not mechanically repeat parameter names.
-6. Fuse the expanded modules into a natural, detailed, copy-ready prompt with photography-director intent.
-7. Enforce the safety boundaries in [docs/prompt_safety.md](docs/prompt_safety.md): fictional adult subject, clearly adult presentation, complete clothing, non-explicit framing, no sexualized minor or age-ambiguous presentation, and no non-consensual or deceptive identity use.
-8. Return the canonical format: locked parameters, module analysis, final prompt, and style-specific negative constraints. If the user explicitly requests only the final prompt, return the final prompt and negative constraints only.
+1. Read [skill/skill.md](skill/skill.md). It is the concise canonical workflow.
+2. Read [docs/prompt_safety.md](docs/prompt_safety.md). It is the single safety authority.
+3. Select exactly one style route, then read only its file:
+   - [clean lifestyle](skill/routes/clean-lifestyle.md)
+   - [pure desire curve lifestyle](skill/routes/pure-desire-curve.md)
+   - [urban fashion](skill/routes/urban-fashion.md)
+   - [gufeng fantasy](skill/routes/gufeng-fantasy.md)
+   - [e-commerce try-on](skill/routes/ecommerce-tryon.md)
+4. Read [skill/references/director-expansion.md](skill/references/director-expansion.md) when writing or rewriting a prompt.
+5. Read [skill/references/visual-libraries.md](skill/references/visual-libraries.md) only when a missing face, pose, lighting, or filter field needs completion.
+6. Read [skill/parameter_schema.md](skill/parameter_schema.md) when a field name, alias, output mode, or default requires clarification.
 
-## References
+## Operating rules
 
-- Read [skill/parameter_schema.md](skill/parameter_schema.md) for supported fields and defaults.
-- Read [skill/public_instructions.md](skill/public_instructions.md) when explaining usage to an end user.
-- Read [docs/style_guide.md](docs/style_guide.md) for concise style-routing guidance.
-- Read [skill/usage_examples.md](skill/usage_examples.md) and [examples](examples) when a concrete output pattern is useful.
-- Read [docs/versioning.md](docs/versioning.md) when changing published rules or examples.
+- Lock explicit user parameters. Expand them without silently replacing them.
+- Do not mechanically fill a template. Create one coherent photographed moment.
+- Use a style route as direction, not as a fixed sentence bank.
+- Select details sparingly. Every added detail must support the same image.
+- Default to fictional, clearly adult subjects and non-explicit framing.
+- If the user requests `只要最终提示词`, output only the final prompt and negative constraints.
+- If the user requests direct image generation, prepare the directed prompt internally and route it to the available image-generation capability.
 
-Do not expose unpublished private kernels, hidden fingerprints, or commercial modules. The repository contains the public stable version only.
+## Public references
+
+- Usage guide: [skill/public_instructions.md](skill/public_instructions.md)
+- Examples: [examples](examples)
+- Version notes: [docs/versioning.md](docs/versioning.md)
+
+Do not expose unpublished private kernels, hidden fingerprints, or commercial modules.

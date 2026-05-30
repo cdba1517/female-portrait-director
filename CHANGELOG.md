@@ -1,5 +1,20 @@
 # Changelog
 
+## FEMALE-PORTRAIT-DIRECTOR-V1.2
+
+Director workflow and progressive-loading release.
+
+Added and improved modules:
+
+- Lightweight canonical workflow instead of a single large rule file
+- On-demand loading for five independent style routes
+- Photography-directed expansion with time slice, subtle event, action chain, gaze target, and selective environment details
+- Platform-purpose composition rules for lifestyle, social, editorial, and e-commerce use cases
+- Single authoritative safety document to reduce rule drift
+- Canonical parameter aliases and unified example vocabulary
+- Rewritten examples that demonstrate coherent photographed moments instead of template filling
+- Output modes: concise, standard, director detail, and direct image generation
+
 ## FEMALE-PORTRAIT-DIRECTOR-V1.1
 
 Creative expansion enhancement release.

@@ -2,7 +2,7 @@
 
 # Female Portrait Prompt Director Skill
 
-Female Portrait Prompt Director Skill is a structured prompt-generation and visual-expansion system for AI image creation. It supports clean lifestyle portraits, restrained curve-focused lifestyle portraits, urban fashion photography, gufeng fantasy portraits, and e-commerce clothing model images. The V1.1 creative-expansion release locks user parameters, interprets visual intent, expands each photography module, and fuses the result into stable, compliant, reusable AI image prompts.
+Female Portrait Prompt Director Skill is a structured prompt-generation and visual-direction system for AI image creation. It supports clean lifestyle portraits, restrained curve-focused lifestyle portraits, urban fashion photography, gufeng fantasy portraits, and e-commerce clothing model images. V1.2 locks explicit parameters, loads only the selected style route, and directs a coherent photographed moment with connected actions, gaze, environment, camera, and lighting.
 
 This project is not a generic prompt collection. It is an extensible female portrait prompt Skill framework.
 
@@ -21,9 +21,9 @@ Generate complete prompts from a small set of input parameters. Preserve the use
 ## Core Capabilities
 
 - Lock user-specified parameters and only refine or stabilize them.
-- Route each request through the appropriate style template and avoid conflicting style keywords.
+- Route each request through one on-demand style file and avoid conflicting style keywords.
 - Parse face, body, outfit, scene, camera and pose, lighting, and filter modules.
-- Expand short parameters into concrete visual direction instead of mechanically repeating them.
+- Expand short parameters into a coherent photographed moment instead of mechanically repeating them.
 - Fuse the expanded modules into natural, detailed, copy-ready prompts with photography-director intent.
 - Preserve clothing-display priority for e-commerce images and explicit safety boundaries for curve-focused portraits.
 
@@ -64,7 +64,11 @@ The system returns locked parameters, a complete copy-ready prompt, and negative
 │   ├── skill.md
 │   ├── public_instructions.md
 │   ├── parameter_schema.md
-│   └── usage_examples.md
+│   ├── usage_examples.md
+│   ├── references/
+│   │   ├── director-expansion.md
+│   │   └── visual-libraries.md
+│   └── routes/
 ├── docs/
 │   ├── style_guide.md
 │   ├── prompt_safety.md
@@ -84,5 +88,5 @@ This project is licensed under the [MIT License](LICENSE). The MIT License permi
 ## Author and Version
 
 - Author: Li Yue (李岳)
-- Version: `FEMALE-PORTRAIT-DIRECTOR-V1.1`
+- Version: `FEMALE-PORTRAIT-DIRECTOR-V1.2`
 - Project: `Female Portrait Prompt Director Skill`
