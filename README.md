@@ -2,13 +2,13 @@
 
 # Female Portrait Prompt Director Skill
 
-Female Portrait Prompt Director Skill is a structured prompt-generation system for AI image creation. It supports clean lifestyle portraits, restrained curve-focused lifestyle portraits, urban fashion photography, gufeng fantasy portraits, and e-commerce clothing model images. The system includes parameter locking, style routing, facial-feature modules, body-shape modules, camera and lighting completion, and negative-constraint optimization to help users generate stable, compliant, and reusable AI image prompts from simple inputs.
+Female Portrait Prompt Director Skill is a structured prompt-generation and visual-expansion system for AI image creation. It supports clean lifestyle portraits, restrained curve-focused lifestyle portraits, urban fashion photography, gufeng fantasy portraits, and e-commerce clothing model images. The V1.1 creative-expansion release locks user parameters, interprets visual intent, expands each photography module, and fuses the result into stable, compliant, reusable AI image prompts.
 
 This project is not a generic prompt collection. It is an extensible female portrait prompt Skill framework.
 
 ## Project Scope
 
-Generate complete prompts from a small set of input parameters. Preserve the user's explicit requirements while completing facial features, body shape, camera direction, lighting, filters, platform purpose, and negative constraints. Subjects must be clearly adult women. Outputs emphasize realistic photography, restrained expression, and stable generation.
+Generate complete prompts from a small set of input parameters. Preserve the user's explicit requirements while visually expanding facial features, body shape, outfit, scene, camera and pose, lighting, filters, platform purpose, and negative constraints. Subjects must be clearly adult women. Outputs emphasize realistic photography, restrained expression, visual coherence, and stable generation.
 
 ## Supported Styles
 
@@ -22,8 +22,9 @@ Generate complete prompts from a small set of input parameters. Preserve the use
 
 - Lock user-specified parameters and only refine or stabilize them.
 - Route each request through the appropriate style template and avoid conflicting style keywords.
-- Complete facial differentiation, body shape, camera, lighting, filters, and negative constraints automatically.
-- Support prompt generation, prompt optimization, failure diagnosis, parameter recommendations, and review-friendly rewrites.
+- Parse face, body, outfit, scene, camera and pose, lighting, and filter modules.
+- Expand short parameters into concrete visual direction instead of mechanically repeating them.
+- Fuse the expanded modules into natural, detailed, copy-ready prompts with photography-director intent.
 - Preserve clothing-display priority for e-commerce images and explicit safety boundaries for curve-focused portraits.
 
 ## Quick Start
@@ -44,10 +45,9 @@ The system returns locked parameters, a complete copy-ready prompt, and negative
 
 ```text
 1. Locked parameters
-2. Style decision
+2. Module analysis
 3. Final prompt
 4. Negative constraints
-5. Optional optimization suggestions
 ```
 
 ## Repository Structure
@@ -84,5 +84,5 @@ This project is licensed under the [MIT License](LICENSE). The MIT License permi
 ## Author and Version
 
 - Author: Li Yue (李岳)
-- Version: `FEMALE-PORTRAIT-DIRECTOR-V1.0`
+- Version: `FEMALE-PORTRAIT-DIRECTOR-V1.1`
 - Project: `Female Portrait Prompt Director Skill`

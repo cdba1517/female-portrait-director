@@ -1,6 +1,6 @@
 # 调用示例
 
-下面是五大内置风格的简短调用入口。完整参数组合和输出示例位于 `examples/`。
+下面是五大内置风格的简短调用入口。V1.1 会锁定参数，输出模块解析，再将视觉扩写融合为完整提示词。完整参数组合和输出示例位于 `examples/`。
 
 ## 清纯生活照
 
@@ -62,4 +62,3 @@
 ```
 
 完整示例：[ecommerce_tryon_examples.md](../examples/ecommerce_tryon_examples.md)
-
